@@ -42,6 +42,9 @@ Thumbs.db
 .env.test.local
 .env.*.local
 
+# PostgreSQL data (Docker volume)
+pgdata/
+
 # Misc
 *.lock
 .cache/

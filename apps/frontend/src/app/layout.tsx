@@ -22,7 +22,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={nunito.variable}>
       <body
-        className={` antialiased w-full bg-[#f7f9fa]`}
+        className={`
+          antialiased 
+          w-full 
+          bg-[url('../images/bg.svg')]
+          bg-cover
+          bg-center
+          bg-no-repeat
+          bg-fixed`
+        }
       >
         <Header/>
         {children}

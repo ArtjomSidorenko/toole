@@ -5,7 +5,7 @@ import { Button } from "./button"
 
 export default function Header() {
     return (
-        <header className="h-[70px] shadow-md flex justify-between items-center px-4 fixed left-0 right-0 z-10">
+        <header className="bg-[white] h-[70px] shadow-md flex justify-between items-center px-4 fixed left-0 right-0 z-10">
             <div className="flex items-center gap-4">
                 <Image width={75} height={75} src={logo} alt="logo"></Image>
                 <Button variant="ghost">Build Your CV</Button>
