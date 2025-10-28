@@ -1,7 +1,8 @@
 import Image from "next/image"
-import logo from "../../../public/logo.png"
-import uk_flag from "../../../public/uk_lang.svg"
-import { Button } from "./button"
+import logo from "../../../../public/logo.png"
+
+import { Button } from "../button"
+import SelectLanguage from "./SelectLanguage"
 
 export default function Header() {
     return (
@@ -14,7 +15,7 @@ export default function Header() {
             <div className="flex items-center gap-4">
                 <Button variant="ghost">Post a job</Button>
                 <Button variant="lightBlue">Login</Button>
-                <Image className="cursor-pointer" src={uk_flag} alt="language"></Image>
+                <SelectLanguage/>
             </div>
         </header>
     )
