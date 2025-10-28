@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "@nestjs/mapped-types": "*"
   },
   "name": "toole",
@@ -12,7 +13,10 @@
     "lint": "turbo run lint"
   },
   "packageManager": "npm@10.0.0",
-  "workspaces": ["apps/*", "packages/*"],
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",

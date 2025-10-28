@@ -1,9 +1,13 @@
 "use client";
 
+import Hero from "@/components/ui/hero";
+
 export default function Home() {
 
   return (
-    <main className="pt-[75px]">asdasd</main>
+    <main>
+        <Hero />
+    </main>
   );
 }
 

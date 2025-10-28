@@ -19,9 +19,11 @@ const buttonVariants = cva(
         ghost:
           "text-[#0049B0] hover:bg-[#EDF2FE] cursor-pointer transition ease-in-out duration-[0.4s] text-[16px]",
         link: "text-primary underline-offset-4 hover:underline",
+        search: "cursor-pointer bg-gradient-to-r from-[#0A66C2] to-[#2563EB] text-white font-medium rounded-full h-[43px] w-[151px]"
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
+        none: "",
         sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
         icon: "size-9",
