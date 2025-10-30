@@ -14,11 +14,11 @@ export default function Hero() {
         <div className="flex flex-col px-[46px] pt-[44px] sm:flex-row w-full gap-[20px]">
           <div className="relative flex-2">
             <InputGroupIcon as={BriefcaseIcon} />
-            <Input placeholder="Job title, keywords or company" />
+            <Input className="sm:placeholder:text-[16px] placeholder:text-[14px]" placeholder="Job title, keywords or company" />
           </div>
           <div className="relative flex-1">
             <InputGroupIcon as={MapPinIcon} />
-            <Input placeholder="Location" />
+            <Input className="sm:placeholder:text-[16px] placeholder:text-[14px]" placeholder="Location" />
           </div>
         </div>
           <Button variant="search" size='none' className="relative mt-[17px]">
