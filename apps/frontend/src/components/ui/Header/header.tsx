@@ -1,21 +1,18 @@
-import Image from "next/image"
-import logo from "../../../../public/logo.png"
+import HeaderDesktop from "./HeaderDesktop"
+import HeaderMobile from "./HeaderMobile"
 
-import { Button } from "../button"
-import SelectLanguage from "./SelectLanguage"
 
 export default function Header() {
     return (
-        <header className="bg-[white] h-[70px] shadow-md flex justify-between items-center px-4 fixed left-0 right-0 z-10">
-            <div className="flex items-center gap-4">
-                <Image width={75} height={75} src={logo} alt="logo"></Image>
-                <Button variant="ghost">Build Your CV</Button>
-            </div>
+        <header className="bg-white h-[70px] shadow-md fixed left-0 right-0 z-10">
+            <div className="max-w-6xl mx-auto px-4">
+                <div className="hidden sm:flex w-full justify-between">
+                    <HeaderDesktop />
+                </div>
 
-            <div className="flex items-center gap-4">
-                <Button variant="ghost">Post a job</Button>
-                <Button variant="lightBlue">Login</Button>
-                <SelectLanguage/>
+                <div className="flex sm:hidden w-full justify-between items-center">
+                    <HeaderMobile />
+                </div>
             </div>
         </header>
     )

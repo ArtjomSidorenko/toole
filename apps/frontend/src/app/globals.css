@@ -30,8 +30,10 @@
   --color-muted: var(--muted);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-secondary: var(--secondary);
+  --color-secondary-gray: var(--secondary-gray)
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+  --color-primary-blue: var(--primary-blue);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -50,6 +52,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
+  --primary-blue: #0049B0;
   --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
@@ -75,6 +78,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --secondary-gray: #6B7280;
 }
 
 .dark {
@@ -117,5 +121,10 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+@layer utilities {
+  .shadow-blue {
+    box-shadow: 0px 25px 50px rgba(10, 102, 194, 0.25);
   }
 }
