@@ -4,7 +4,7 @@ import OfferHeader from "@/components/ui/Offer/OfferHeader";
 import OfferInfoSidebar from "@/components/ui/Offer/OfferInfoSidebar"
 export default function OfferPage() {
   return (
-    <main className="max-w-5xl mx-auto">
+    <main className="max-w-7xl mx-auto">
         <OfferHeader/>
         <div className="flex flex-col sm:flex-row mt-[48px] gap-[41px]">
             <OfferDescription/>
