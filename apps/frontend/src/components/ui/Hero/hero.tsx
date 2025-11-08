@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input"
 import { MagnifyingGlassIcon, MapPinIcon, BriefcaseIcon } from "@heroicons/react/24/outline";
 import { InputGroupIcon } from "@/components/ui/input-group"
+import StatContainer from "@/components/ui/Hero/StatContainer";
 
 export default function Hero() {
   return (
@@ -26,6 +27,12 @@ export default function Hero() {
             Search Jobs
           </Button>
       </div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-[35px] mt-4 place-items-center">
+        <StatContainer value="50k+" label="active jobs"/>
+        <StatContainer value="10k+" label="companies" />
+        <StatContainer value="1M+" label="professionals" className="col-span-2 sm:col-span-1 justify-self-center"/>
+      </div>
+
     </section>
   )
 }
