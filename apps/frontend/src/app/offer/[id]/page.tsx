@@ -6,13 +6,10 @@ export default function OfferPage() {
   return (
     <main className="max-w-7xl mx-auto">
         <OfferHeader/>
-        <div className="flex flex-col sm:flex-row mt-[48px] gap-[41px]">
+        <div className="flex flex-col md:flex-row mt-[48px] gap-[41px]">
             <OfferDescription/>
             <OfferInfoSidebar/>
         </div>
-    
-        
-      
     </main>
   )
 }
