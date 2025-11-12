@@ -1,0 +1,28 @@
+{
+    "id": 1,
+    "title": "Product Tester",
+    "company": "Durex Eesti",
+    "location": "Tallinn",
+    "logo": "/durex.png",
+    "badges": [
+        { "type": "fullTimeOffer", "label": "Full-time" },
+        { "type": "onSiteOffer", "label": "On-site" }
+    ],
+    "description": {
+        "job": "Durex, the world's leading brand in sexual wellness and intimacy innovation, is searching for open-minded, confident, and responsible individuals in Estonia to join our exclusive team. This is not your typical product testing job — it's a rare opportunity to become part of something more intimate. As a Durex Product Tester, you'll be among the first people in Estonia to experience and evaluate our latest range of condoms and other sexual wellness products before they officially reach the market.",
+        "role": [
+        "Test new Durex products in real-life conditions.",
+        "Evaluate comfort, fit, texture, scent, and overall experience.",
+        "Complete short anonymous feedback surveys.",
+        "Maintain discretion and professionalism at all times."
+        ]
+    },
+    "info": [
+        { "icon": "calendar", "label": "Posted on", "value": "Oct 22, 2025" },
+        { "icon": "clock", "label": "Expires on", "value": "Nov 21, 2025" },
+        { "icon": "map", "label": "Location", "value": "Paldiski, Estonia" },
+        { "icon": "money", "label": "Salary", "value": "From €1200 / month" },
+        { "icon": "briefcase", "label": "Job Type", "value": "Full-time" },
+        { "icon": "info", "label": "Additional Info", "value": "Permanent position" }
+    ]
+}

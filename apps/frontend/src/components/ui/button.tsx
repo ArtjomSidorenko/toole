@@ -15,11 +15,13 @@ const buttonVariants = cva(
         outline:
           "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
         secondary:
-          "bg-secondary  text-secondary-foreground hover:bg-secondary/80",
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost:
           "text-[#0049B0] hover:bg-[#EDF2FE] cursor-pointer transition ease-in-out duration-[0.4s] text-[16px]",
         link: "text-primary underline-offset-4 hover:underline",
-        search: "pl-[34px] pr-[22px] w-full sm:w-auto cursor-pointer bg-gradient-to-r from-[#0A66C2] to-[#2563EB] text-white font-medium rounded-full h-[43px] w-[151px]"
+        search: "pl-[34px] pr-[22px] w-full sm:w-auto cursor-pointer bg-gradient-to-r from-[#0A66C2] to-[#2563EB] text-white font-medium rounded-full h-[43px] w-[151px]",
+        primaryBlue: "px-[7px] py-[12px] text-[16px] bg-primary-blue text-white cursor-pointer hover:shadow-sm hover:shadow-[#72798157] transition ease-in-out duration-[0.4s] rounded-[12px]"
+
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
