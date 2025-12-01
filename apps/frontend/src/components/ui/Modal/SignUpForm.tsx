@@ -1,3 +1,5 @@
+'use client';
+import React from "react";
 import {
     Card,
     CardContent,
@@ -6,9 +8,11 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import * as RPNInput from "react-phone-number-input";
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import { PhoneInput } from "../phone-input"
 import Image from "next/image"
 import google from "../../../../public/google.png"
 import PasswordInput from "../password-input"
@@ -20,6 +24,7 @@ interface SignUpProps {
 }
 
 export default function SignUpForm({ isOpen, onClose, onOpenSignIn }: SignUpProps) {
+    const [phone, setPhone] = React.useState("");
     return (
         <div className={`fixed inset-0 z-50 flex items-center justify-center transition-all duration-300 ${isOpen
             ? 'bg-black/50 backdrop-blur-sm'
@@ -58,6 +63,11 @@ export default function SignUpForm({ isOpen, onClose, onOpenSignIn }: SignUpProp
                             <Label htmlFor="password" className="text-[#4B5563] text-[14px]">Repeat password</Label>
                             <PasswordInput />
                         </div>
+                        <div className="flex flex-col gap-1 items-start">
+                            <Label htmlFor="password" className="text-[#4B5563] text-[14px]">Phone Number (Optional)</Label>
+                            <PhoneInput value={phone} onChange={setPhone}/>
+                        </div>
+
                     </form>
                 </CardContent>
                 <CardFooter variant="auth">

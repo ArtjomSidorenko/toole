@@ -49,12 +49,12 @@ export default function SignInForm({ isOpen, onClose, onOpenSignUp }: SignInForm
                     <form className="flex flex-col gap-[20px]">
                         <div className="flex flex-col gap-1 items-start">
                             <Label htmlFor="email" className="text-[#4B5563] text-[14px]">
-                                Email
+                                Email or Phone Number
                             </Label>
                             <Input className="text-[14px] text-gray-500"
-                                type="email"
+                                type="text"
                                 id="email"
-                                placeholder="you@example.com"
+                                placeholder="Email or Phone Number"
                                 required
                             />
                         </div>
@@ -68,11 +68,11 @@ export default function SignInForm({ isOpen, onClose, onOpenSignUp }: SignInForm
                                         defaultChecked
                                         className="data-[state=checked]:border-blue-600 data-[state=checked]:bg-blue-600 data-[state=checked]:text-white "
                                     />
-                                    <p className="text-[10px]">
+                                    <p className="text-[12px]">
                                         Keep me signed in
                                     </p>
                                 </Label>
-                                <a className="text-[10px] text-[#2563EB]" href="#">Forgot your password?</a>
+                                <a className="text-[12px] text-[#2563EB]" href="#">Forgot your password?</a>
                             </div>
                         </div>
                     </form>

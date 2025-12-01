@@ -8,6 +8,7 @@ import SelectLanguage from "./SelectLanguage"
 import SignUpForm from '../Modal/SignUpForm';
 import SignInForm from '../Modal/SignInForm';
 
+import Link from 'next/link';
 export default function HeaderMobile() {
     const [isOpen, setIsOpen] = useState(false);
     const [showLogin, setShowLogin] = useState(false)
@@ -16,7 +17,7 @@ export default function HeaderMobile() {
     return (
         <>
             <div className="flex items-center gap-2">
-                <Image width={75} height={75} src={logo} alt="logo" />
+                <Link href="/"><Image width={75} height={75} src={logo} alt="logo"></Image></Link>
             </div>
 
             <div className="relative">
