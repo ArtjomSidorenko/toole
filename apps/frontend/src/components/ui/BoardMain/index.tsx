@@ -1,7 +1,7 @@
 "use client";
 import { ArrowTrendingUpIcon } from "@heroicons/react/24/outline";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../tabs";
-import Featured from "./JobsList";
+import JobsList from "./JobsList";
 import JobFilters from "./JobFilters";
 import TopCompanies from "./TopCompanies";
 
@@ -23,18 +23,18 @@ export default function BoardMain() {
               <h2 className="text-2xl font-bold text-slate-800">Featured Job Listings</h2>
             </div>
           </div>
-          <div className="flex gap-8">
+          <div className="flex gap-8 flex-col md:flex-row">
             <JobFilters />
-            <Featured />
+            <JobsList />
           </div>
         </TabsContent>
         <TabsContent value="topCompanies">
           <TopCompanies />
         </TabsContent>
         <TabsContent value="browseJobs">
-          <div className="flex gap-8">
+          <div className="flex gap-8 flex-col md:flex-row">
             <JobFilters />
-            <Featured />
+            <JobsList />
           </div>
         </TabsContent>
       </Tabs>

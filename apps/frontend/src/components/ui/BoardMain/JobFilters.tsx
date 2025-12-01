@@ -5,9 +5,9 @@ import { Slider } from "../slider";
 
 export default function JobFilters() {
   return (
-    <aside className="lg:col-span-1 w-[350px]">
-      <Card className="sticky top-24 border-slate-200 shadow-lg">
-        <CardContent className="p-6">
+    <aside className="w-full md:w-[350px]">
+      <Card className=" md:sticky top-24 border-slate-200 shadow-lg">
+        <CardContent className="px-6 py-2 md:p-6 flex flex-row md:flex-col justify-between">
           <h3 className="font-bold text-lg mb-6 text-slate-800">Filters</h3>
 
           <div className="mb-8">
