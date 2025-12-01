@@ -70,6 +70,30 @@ const jobs: Job[] = [
     workMode: "Hybrid",
     companyInitial: "C",
     bgColor: "bg-orange-100"
+  },
+  {
+    id: "5",
+    title: "DevOps Engineer",
+    company: "CloudNet Solutions",
+    location: "Austin, TX",
+    postedDays: 5,
+    salaryRange: "$110k - $160k",
+    jobType: "Full-time",
+    workMode: "Hybrid",
+    companyInitial: "C",
+    bgColor: "bg-orange-100"
+  },
+  {
+    id: "6",
+    title: "DevOps Engineer",
+    company: "CloudNet Solutions",
+    location: "Austin, TX",
+    postedDays: 5,
+    salaryRange: "$110k - $160k",
+    jobType: "Full-time",
+    workMode: "Hybrid",
+    companyInitial: "C",
+    bgColor: "bg-orange-100"
   }
 ];
 
