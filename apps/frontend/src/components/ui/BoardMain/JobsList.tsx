@@ -102,7 +102,7 @@ export default function JobsList() {
     <div className="lg:col-span-3 space-y-4 w-full">
       {jobs.map(job => (
         <Link key={job.id} href={`/offer/${job.id}`} className="block">
-          <Card className="hover:shadow-xl transition-all duration-300 border-slate-200 cursor-pointer">
+          <Card className="hover:shadow-xl transition-all duration-300 border-slate-200 cursor-pointer p-5">
             <CardContent className="px-6">
               <div className="flex items-start gap-4">
                 <div
