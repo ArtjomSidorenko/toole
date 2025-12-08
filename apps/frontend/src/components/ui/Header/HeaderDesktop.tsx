@@ -7,6 +7,7 @@ import { Button } from "../button"
 import SelectLanguage from "./SelectLanguage"
 import { useState } from "react"
 
+import Link from 'next/link'
 
 import SignInForm from "../Modal/SignInForm"
 import SignUpForm from "../Modal/SignUpForm"
@@ -17,7 +18,8 @@ export default function HeaderDesktop() {
     return (
         <>
             <div className="flex items-center gap-4">
-                <Image width={75} height={75} src={logo} alt="logo"></Image>
+                <Link href="/"><Image width={75} height={75} src={logo} alt="logo"></Image></Link>
+                
                 <Button variant="ghost">Build Your CV</Button>
             </div>
 

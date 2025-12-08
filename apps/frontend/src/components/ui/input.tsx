@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 
 const inputVariants = cva(
   "w-full rounded-full border border-gray-300 pl-[36px] pr-4 py-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#2563EB]",
+  
   {
     variants: {
       variant: {

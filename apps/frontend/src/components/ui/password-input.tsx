@@ -15,7 +15,7 @@ export default function PasswordInput() {
                 placeholder="••••••••"
                 required
             />
-            <Button variant="ghost"
+            <Button type="button" variant="ghost"
                 className="absolute right-2 top-1/2 -translate-y-1/2"
                 onClick={() => setShowPassword(!showPassword)}>
                 {
