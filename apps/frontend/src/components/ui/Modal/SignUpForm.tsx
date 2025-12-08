@@ -1,26 +1,24 @@
 'use client';
 import React from "react";
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
-import * as RPNInput from "react-phone-number-input";
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import { PhoneInput } from "../phone-input"
-import Image from "next/image"
-import google from "../../../../public/google.png"
-import PasswordInput from "../password-input"
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle
+} from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import google from "../../../../public/google.png";
+import PasswordInput from "../password-input";
 
 interface SignUpProps {
-    isOpen: boolean,
-    onClose: () => void,
-    onOpenSignIn: () => void,
+  isOpen: boolean;
+  onClose: () => void;
+  onOpenSignIn: () => void;
 }
 
 export default function SignUpForm({ isOpen, onClose, onOpenSignIn }: SignUpProps) {
