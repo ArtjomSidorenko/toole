@@ -34,7 +34,7 @@ export default function SignUpForm({ isOpen, onClose, onOpenSignIn }: SignUpProp
                 className={`transform transition-all duration-500 ${isOpen
                     ? 'scale-100 opacity-100 translate-y-0'
                     : 'scale-90 opacity-0 -translate-y-8'
-                    }`}
+                    }` }
                 style={{
                     transitionTimingFunction: 'cubic-bezier(0.34, 1.56, 0.64, 1)'
                 }}>
