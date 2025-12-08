@@ -46,6 +46,7 @@ export default function SignUpForm({ isOpen, onClose, onOpenSignIn }: SignUpProp
       >
         <CardHeader variant="auth">
           <CardTitle variant="auth">Create an account</CardTitle>
+          <button onClick={onClose} className="absolute right-4 top-4 text-gray-500 hover:text-gray-700">✕</button>
           <CardDescription variant="auth">Join us in just a minute</CardDescription>
         </CardHeader>
         <CardContent variant="auth">

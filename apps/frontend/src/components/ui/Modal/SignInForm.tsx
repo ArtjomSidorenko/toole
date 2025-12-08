@@ -7,6 +7,10 @@ import {
   CardTitle
 } from "@/components/ui/card";
 
+import {
+  DialogClose
+} from "@/components/ui/dialog";
+
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -43,6 +47,7 @@ export default function SignInForm({ isOpen, onClose, onOpenSignUp }: SignInForm
       >
         <CardHeader variant="auth">
           <CardTitle variant="auth">Sign in to your account</CardTitle>
+          <button onClick={onClose} className="absolute top-4 right-4 text-gray-500 hover:text-gray-700">✕</button>
           <CardDescription variant="auth">
             Welcome back! We're happy to see you again.
           </CardDescription>
@@ -73,9 +78,9 @@ export default function SignInForm({ isOpen, onClose, onOpenSignUp }: SignInForm
                     defaultChecked
                     className="data-[state=checked]:border-blue-600 data-[state=checked]:bg-blue-600 data-[state=checked]:text-white "
                   />
-                  <p className="text-[10px]">Keep me signed in</p>
+                  <p className="text-[12px]">Keep me signed in</p>
                 </Label>
-                <a className="text-[10px] text-[#2563EB]" href="#">
+                <a className="text-[12px] text-[#2563EB]" href="#">
                   Forgot your password?
                 </a>
               </div>
