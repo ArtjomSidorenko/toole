@@ -27,7 +27,7 @@ export default function SignUpForm({ isOpen, onClose, onOpenSignIn }: SignUpProp
     const [phone, setPhone] = React.useState("");
     return (
         <div className={`fixed inset-0 z-50 flex items-center justify-center transition-all duration-300 ${isOpen
-            ? 'bg-black/50 backdrop-blur-sm'
+            ? 'bg-black/50 backdrop-blur-sm '
             : 'bg-black/0 backdrop-blur-none pointer-events-none'
             }`} onClick={onClose}>
             <Card variant="auth" onClick={(e) => e.stopPropagation()}
