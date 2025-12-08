@@ -37,6 +37,7 @@
   --color-primary: var(--primary);
   --color-primary-blue: var(--primary-blue);
   --color-light-blue: var(--light-blue);
+  --color-auth-blue: var(--auth-blue);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -57,6 +58,7 @@
   --popover-foreground: oklch(0.145 0 0);
   --primary-blue: #0049B0;
   --light-blue: #EDF2FE;
+  --auth-blue: #0A66C2;
   --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);

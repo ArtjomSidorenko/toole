@@ -20,7 +20,9 @@ const buttonVariants = cva(
           "text-[#0049B0] hover:bg-[#EDF2FE] cursor-pointer transition ease-in-out duration-[0.4s] text-[16px]",
         link: "text-primary underline-offset-4 hover:underline",
         search: "pl-[34px] pr-[22px] w-full sm:w-auto cursor-pointer bg-gradient-to-r from-[#0A66C2] to-[#2563EB] text-white font-medium rounded-full h-[43px] w-[151px]",
-        primaryBlue: "px-[7px] py-[12px] text-[16px] bg-primary-blue text-white cursor-pointer hover:shadow-sm hover:shadow-[#72798157] transition ease-in-out duration-[0.4s] rounded-[12px]"
+        primaryBlue: "px-[7px] py-[12px] text-[16px] bg-primary-blue text-white cursor-pointer hover:shadow-sm hover:shadow-[#72798157] transition ease-in-out duration-[0.4s] rounded-[12px] w-full",
+        google: "w-full pl-[34px] pr-[22px] w-full cursor-pointer text-secondary-gray border font-medium rounded-full ",
+        auth: "pl-[34px] pr-[22px] w-full cursor-pointer bg-gradient-to-r from-[#0A66C2] to-[#2563EB] text-white font-medium rounded-full",
 
       },
       size: {
