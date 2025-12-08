@@ -5,9 +5,13 @@ import { Button } from "@/components/ui/button"
 import logo from "../../../../public/logo.png"
 import Image from "next/image"
 import SelectLanguage from "./SelectLanguage"
+import SignUpForm from '../Modal/SignUpForm';
+import SignInForm from '../Modal/SignInForm';
 
 export default function HeaderMobile() {
     const [isOpen, setIsOpen] = useState(false);
+    const [showLogin, setShowLogin] = useState(false)
+    const [showSignUp, setShowSignUp] = useState(false)
 
     return (
         <>
@@ -71,7 +75,10 @@ export default function HeaderMobile() {
                         <div className="my-3 border-t border-gray-100"></div>
 
                         <button
-                            onClick={() => setIsOpen(false)}
+                            onClick={() => {
+                                setIsOpen(false); 
+                                setShowLogin(true);
+                            }}
                             className="w-full text-left px-4 py-3 bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors duration-200 rounded-xl font-medium"
                         >
                             Login
@@ -95,6 +102,22 @@ export default function HeaderMobile() {
                     />
                 )}
             </div>
+            <SignInForm
+                isOpen={showLogin}
+                onClose={() => setShowLogin(false)}
+                onOpenSignUp={() => {
+                    setShowLogin(false)
+                    setShowSignUp(true)
+                }}
+            />
+            <SignUpForm
+                isOpen={showSignUp}
+                onClose={() => setShowSignUp(false)}
+                onOpenSignIn={() => {
+                    setShowSignUp(false)
+                    setShowLogin(true)
+                }}
+            />
         </>
     )
 }
